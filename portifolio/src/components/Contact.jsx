@@ -81,7 +81,7 @@ const Contact = () => {
     const handleSubmit = (event) => {
     event.preventDefault();
 
-    emailjs.sendForm('service_ch59a7u', 'template_bbq9ub6', ref.current, 'S_WT1Xlt-9oP0hE5G')
+    emailjs.sendForm('service_id', 'template_id', ref.current, 'public_key')
     .then((result) => {
         console.log(result.text);
         setSucess(true);
